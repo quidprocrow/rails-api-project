@@ -1,5 +1,5 @@
 #!/bin/bash
-CONTENT="I am an example of content." ARCHIVED="N"
+CONTENT="I am an example of content." ARCHIVED="N" LIST="1"
 curl "http://localhost:4741/items/" \
   --include \
   --request POST \
@@ -7,7 +7,8 @@ curl "http://localhost:4741/items/" \
   --data '{
     "item": {
       "content": "'"${CONTENT}"'",
-      "archived": "'"${ARCHIVED}"'"
+      "archived": "'"${ARCHIVED}"'",
+      "list_id": "'"${LIST}"'"
     }
   }'
 

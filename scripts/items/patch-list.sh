@@ -1,5 +1,5 @@
 #!/bin/bash
-ID="3" CONTENT="I am the patch test!" ARCHIVED="Y"
+ID="1" CONTENT="Time to test lists!!" ARCHIVED="Y" LIST=1
 curl "http://localhost:4741/items/{$ID}" \
   --include \
   --request PATCH \
@@ -7,7 +7,8 @@ curl "http://localhost:4741/items/{$ID}" \
   --data '{
     "item": {
       "content": "'"${CONTENT}"'",
-      "archived": "'"${ARCHIVED}"'"
+      "archived": "'"${ARCHIVED}"'",
+      "list_id": "'"${LIST}"'"
     }
   }'
 
