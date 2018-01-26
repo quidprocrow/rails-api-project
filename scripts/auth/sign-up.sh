@@ -1,5 +1,5 @@
 #!/bin/bash
-
+EMAIL="hope" PASSWORD="hope" password_confirmation="hope"
 curl "http://localhost:4741/sign-up" \
   --include \
   --request POST \
