@@ -5,7 +5,7 @@ curl "http://localhost:4741/items/" \
   --request POST \
   --header "Content-Type: application/json" \
   --data '{
-    "banana": {
+    "item": {
       "content": "'"${CONTENT}"'",
       "archived": "'"${ARCHIVED}"'"
     }
