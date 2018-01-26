@@ -1,4 +1,4 @@
-ID="1"
+ID="3"
 curl "http://localhost:4741/items/${ID}" \
   --include \
   --request GET \
