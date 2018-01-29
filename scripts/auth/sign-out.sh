@@ -1,5 +1,6 @@
 #!/bin/bash
-TOKEN="BAhJIiVmMmQ0Nzg1YzM4YTQxNGQ0MzI2MTA3ZDMxN2ExOGE4MAY6BkVG--3bdda94247ad89568ec7e62370cf5b006328eaff"
+TOKEN="BAhJIiViZmUzYTdiNjdlNjZlOTEzZDY5MjBmMmU5YjhiZWQ3NwY6BkVG--3e8f1c12ccc5e029db06a01202693240fb3be566"
+
 curl "http://localhost:4741/sign-out" \
   --include \
   --request DELETE \
