@@ -1,4 +1,4 @@
-class ListsController < ApplicationController
+class ListsController < ProtectedController
   before_action :set_list, only: [:show, :update, :destroy]
 
   # GET /lists
@@ -10,15 +10,15 @@ class ListsController < ApplicationController
 
   # GET /lists/1
   def show
-    render json: @list
+    render json: List.find(params[:id])
   end
 
   # POST /lists
   def create
-    @list = List.new(list_params)
+    @list = current_user.lists.build(list_params)
 
     if @list.save
-      render json: @list, status: :created, location: @list
+      render json: @list, status: :created
     else
       render json: @list.errors, status: :unprocessable_entity
     end
@@ -41,11 +41,11 @@ class ListsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_list
-      @list = List.find(params[:id])
+      @list = current_user.lists.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def list_params
-      params.require(:list).permit(:name)
+      params.require(:list).permit(:name, :items)
     end
 end
