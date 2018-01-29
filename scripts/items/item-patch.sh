@@ -1,5 +1,5 @@
 #!/bin/bash
-ID="1" CONTENT="Time to test lists!!" ARCHIVED="Y" LIST=1
+ID="1" CONTENT="Time to test lists!!" ARCHIVED="Y" LIST="1"
 curl "http://localhost:4741/items/{$ID}" \
   --include \
   --request PATCH \

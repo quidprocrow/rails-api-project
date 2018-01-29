@@ -1,5 +1,5 @@
 #!/bin/bash
-ID="1" TOKEN="BAhJIiVmMmQ0Nzg1YzM4YTQxNGQ0MzI2MTA3ZDMxN2ExOGE4MAY6BkVG--3bdda94247ad89568ec7e62370cf5b006328eaff"
+ID="1" TOKEN="BAhJIiU5Y2VmYWU2ZDVkYzkwNTkyYTkwZDNjNGY0NjIyOWFhNwY6BkVG--8b086978076cf89623b97c31f2e8b2adca5a454d"
 curl "http://localhost:4741/users/${ID}" \
   --include \
   --request GET \
