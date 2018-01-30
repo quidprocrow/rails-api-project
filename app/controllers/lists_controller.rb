@@ -3,14 +3,14 @@ class ListsController < ProtectedController
 
   # GET /lists
   def index
-    @lists = List.all
+    @lists = current_user.lists
 
     render json: @lists
   end
 
   # GET /lists/1
   def show
-    render json: List.find(params[:id])
+    render json: @list
   end
 
   # POST /lists
