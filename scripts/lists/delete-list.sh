@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID="6" TOKEN="BAhJIiUyOGE5NWYwOGZjZDIyOWJkMmI3OWM0YjdmNzQzNDVjMQY6BkVG--ff74e49b0cb2d81b66742ff3b7807c6f8410ce2e"
+ID="1" TOKEN="BAhJIiVhNDE3ZmMyMjhmZjMzZDVhMWMyMjg4Yzc0MTdkOTU2YQY6BkVG--63189e45a27a03ad04c3c5e5eb38b48a7240951a"
 
 curl "http://localhost:4741/lists/${ID}" \
   --include \

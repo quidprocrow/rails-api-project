@@ -2,6 +2,6 @@
 
 class User < ApplicationRecord
   include Authentication
-  has_many :lists
+  has_many :lists, :dependent => :destroy
   has_many :items
 end
