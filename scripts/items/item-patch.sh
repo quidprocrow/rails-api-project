@@ -1,5 +1,5 @@
 #!/bin/bash
-ID="4" CONTENT="Time to test lists!!" ARCHIVED="Y" LIST="5" TOKEN="BAhJIiViZmUzYTdiNjdlNjZlOTEzZDY5MjBmMmU5YjhiZWQ3NwY6BkVG--3e8f1c12ccc5e029db06a01202693240fb3be566"
+ID="10" CONTENT="Time to test lists!!" ARCHIVED="Y" LIST="12" TOKEN="BAhJIiU3MTBiMDRhMGI4YTBmMDFiNTVlYzJkODEzZjNjMDI5MgY6BkVG--7ae05eccb91d45960818efc54e297c9f2c7e42b4"
 curl "http://localhost:4741/items/{$ID}" \
   --include \
   --request PATCH \
