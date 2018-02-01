@@ -10,7 +10,7 @@ class ItemsController < ProtectedController
 
   # GET /items/1
   def show
-    render json: Item.find(params[:id])
+    render json: current_user.items.find(params[:id])
   end
 
   # POST /items
